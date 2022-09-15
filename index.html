@@ -1,46 +1,138 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <meta name="description" content="Title">
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fff;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新宿水族館</title>
+        <meta name="description" content="Title">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .clump {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 7;
+                overflow: hidden;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fff;">
+            <div class="container">
+                <h1><a class="navbar-brand" href="#"><img style="height:45px;" src="images/gasana.png" alt="がさな水族館"></a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-dark" href="#">水族館について</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">魚一覧</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#head01">食べられる魚</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#head03">食べられない魚</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">アクセス</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container">
-            <h1><a class="navbar-brand" href="#"><img style="height:45px;" src="images/gasana.png" alt="がさな水族館"></a></h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link navbar-dark" href="#">水族館について</a>
+            <h1 class="mb-5 pt-4 text-info">新宿水族館</h1>
+            <section>
+                <div class="list-group mx-auto" style="max-width: 600px;">
+                    <h3 class="list-group-item list-group-item-action list-group-item-danger text-center">重要なお知らせ</h3>
+                    <a href="#" class="list-group-item list-group-item-action text-danger">2022年 7月23日　　台風99号の日本列島接近について</a>
+                    <a href="#" class="list-group-item list-group-item-action text-danger">2022年 4月23日　　新型コロナウィルス感染症対策について</a>
+                    <a href="#" class="list-group-item list-group-item-action text-danger">2020年 12月23日　　入場制限について</a>
+                    <a class="list-group-item list-group-item-action disabled text-danger">2006年 4月23日　　入場料金の値上げについて</a>
+                </div>
+            </section>
+            <h2 class="mt-5 mb-4 text-info">おさかなさん紹介コーナー</h2>
+            <section class="container topics">
+                <ul class="row" style="list-style:none;">
+                    <li class="col-lg-4 col-xs-12 mb-5" id="head01">
+                        <img src="./images/ei.jpeg" alt="" class="rounded d-block mx-auto img-fluid">
+                        <h2 class="text-info pt-4">エイ</h2>
+                        <p class="clump">エイ（鱏、鱝、鰩、海鷂魚、英: Batoidea）は板鰓亜綱に属する軟骨魚類のうち、鰓裂が体の下面に開くものの総称。
+
+                            鰓裂が側面に開くサメとは区別される。約530種が知られている。世界中の海洋の暖海域から極域まで広く分布し、一部は淡水にも適応している。一般的に上下に扁平な体型で、細長い尾、5-6対の鰓を持ち、多くは卵を胎内で孵化させて子を産む卵胎生である。尾の棘に毒を持つ種類もいる。サメの一部の系統から底生生活に適応して進化した系統のひとつと考えられているが、トビエイのように二次的に遊泳生活に戻ったものもある。</p>
+                        <a href="#" class="btn btn-primary me-2">もっと詳しく見る</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">魚一覧</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#head01">食べられる魚</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#head03">食べられない魚</a></li>
-                        </ul>
+                    <li class="col-lg-4 col-xs-12 mb-5" id="head02">
+                        <img src="./images/same.jpeg" alt="" class="rounded d-block mx-auto img-fluid">
+                        <h2 class="text-info pt-4">サメ</h2>
+                        <p class="clump">サメ（鮫）は、軟骨魚綱板鰓亜綱に属する魚類のうち、鰓裂が体の側面に開くものの総称。鰓裂が下面に開くエイとは区別される。2016年3月末時点で世界中に9目34科105属509種が存在し、日本近海には9目32科64属130種が認められている[1]。世界中の海洋に広く分布し、オオメジロザメなど一部の種は汽水域、淡水域にも進出する。また、深海性のサメも知られている。
+
+                            体の大きさは種によって異なり、最大のジンベエザメ（体長およそ14メートル）から最小のツラナガコビトザメ（体長22センチメートル）までさまざまであるが、平均的には1 - 3メートルのものが多い。サメを意味する言葉として、他にワニ（和邇）やフカ（鱶）が使われることもある。詳細は、下記#神話におけるサメ参照。</p>
+                        <a href="#" class="btn btn-primary me-2">もっと詳しく見る</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">アクセス</a>
+                    <li class="col-lg-4 col-xs-12 mb-5" id="head03">
+                        <img src="./images/tatiuo.jpeg" alt="" class="rounded d-block mx-auto img-fluid">
+                        <h2 class="text-info pt-4">タチウオ</h2>
+                        <p class="clump">世界中の、熱帯・温帯域の沿岸から大陸棚にかけて棲息する。日本では北海道から九州南岸の沿岸部のほか、瀬戸内海で漁獲量が多い。
+
+                            体長は150cmから最大で234cm[1]約50cmに成長するのに5年程度必要[2]。名前の由来は、金属光沢で平たく細長い体型から『太刀魚』、あるいは、水面の獲物を狙い垂直に立って泳ぐ習性から『立ち魚』とされる。
+                            
+                            銀色に輝くのはグアニン色素層[3]で覆われているためで、体表に鱗を持たない。胸ビレは発達せず、尾ビレや腹ビレは退化している一方で背ビレが大きく発達し（背中全体に伸びて130軟条以上）、運動は主に背ビレを波打たせて行う。
+                            
+                            頭はとがっており、一見獰猛そうな鋭く発達した歯が目立つ。体は全体に左右に平たく、幅は指4本などと表現される。生きている間はやや青味がかった金属光沢を持つが、死後ほどなくすると灰色がかった銀色となる。
+                            
+                            体表のグアニン層は人が指で触れただけですぐ落ちるほど落ちやすいが、生時は常に新しい層が生成し体を保護している。かつては銀粉を採取し、セルロイド製の文房具（筆箱や下敷きなど）や、模造真珠、マニキュアのラメに用いた。
+                            
+                            産卵期は海域により異なるが概ね5月から10月[4]主産卵期は5月から6月[2]。稚魚や幼魚のうちは、甲殻類の浮遊幼生や小さな魚などを食べている。成魚はカミソリのような歯で小魚を食べるが、時にはイカや甲殻類を食べることもある。ただし貝やエビなど硬い殻を持つものは一切口にしないことから、漁師たちは「タチウオは歯を大事にする」と言い習わしてきた。この鋭い歯は、人の皮膚も容易に切り裂くため、生きているタチウオを扱うときには手袋などをして身を守る事が推奨される。泳ぐ力は弱く、エサの魚に追い付かないためエサが近付いてくるのを待っている[5]。
+                            
+                            成魚と幼魚とは逆の行動パターンを持ち、成魚は夜間は深所にいて日中は上方に移動し、特に朝夕は水面近くまで群れて採餌をするが、幼魚は日中は泥底の上の100メートルほどの場所で群れていて、夜になると上方へ移動する。
+                            
+                            潮流が穏やかな場所では頭を海面に向けて立ち泳ぎすることがある。場所によってはこの立ち泳ぎが群れになる事がある。これは、潮流によってタチウオが一箇所に流されて来たという説と、敵から逃げる際に体に当たる光を目晦ましにするためという説がある。潮流が早い場所では立ち泳ぎが出来ないため、この光景は見られない[6]。</p>
+                        <a href="#" class="btn btn-primary me-2">もっと詳しく見る</a>
+                    </li>
+                    <li class="col-lg-4 col-xs-12 mb-5" id="head03">
+                        <img src="./images/kumanomi.jpeg" alt="" class="rounded d-block mx-auto img-fluid">
+                        <h2 class="text-info pt-4">クマノミ</h2>
+                        <p class="clump">最大で雄は10 cm、雌は15 cm程度まで成長する[5]。体はずんぐりして側扁する。
+
+                            背鰭は10棘15-16軟条、臀鰭は2棘13-14軟条[6]。
+                            
+                            体色には地域変異がある。通常は、背側が黒、腹側が橙黄色で、黒い部分は成長とともに拡大する[7]。吻は橙から桃色である。体には2本の白い横縞があり、1本は眼の後方に、もう1本は肛門の上にある。背鰭は橙黄色で、尾柄は白い[8]。尾鰭は三角形に近く、雄は橙色だが雌は白色である[4]。アラビアハタゴイソギンチャク Stichodactyla mertensii に共生するものは腹部まで黒くなる[9]。尾鰭の色は多少淡く、白いこともある[10]。稚魚は橙黄色の体に、白い横縞を持つ[8</p>
+                        <a href="#" class="btn btn-primary me-2">もっと詳しく見る</a>
+                    </li>
+                    <li class="col-lg-4 col-xs-12 mb-5" id="head03">
+                        <img src="./images/sango.jpeg" alt="" class="rounded d-block mx-auto img-fluid">
+                        <h2 class="text-info pt-4">サンゴ</h2>
+                        <p class="clump">サンゴは、ポリプと呼ばれる構造をもつ。このポリプが単体で生活するものを「単体サンゴ」、有性生殖によって生じた一つのポリプが分裂や出芽を繰り返して生じたクローンが、分離することなく集まって生活するものを「群体サンゴ」と呼ぶ。
+
+                            サンゴの中には体内に褐虫藻という藻類を共生させているものがいる。そのようなものは造礁性サンゴと呼ばれる。造礁性サンゴは褐虫藻から光合成産物を供給されるため比較的成長が早く、サンゴ礁を形成する。造礁性サンゴは光合成により多くのエネルギーを得ているため、光量の多い浅海域に生息する。
+                            
+                            褐虫藻と共生を行わないものは非造礁性サンゴと呼ばれる。光合成によるエネルギーを得ないため、非造礁性サンゴには深海に生息するものもいる。</p>
+                        <a href="#" class="btn btn-primary me-2">もっと詳しく見る</a>
+                    </li>
+                    <li class="col-lg-4 col-xs-12 mb-5" id="head03">
+                        <img src="./images/sake.jpeg" alt="" class="rounded d-block mx-auto img-fluid">
+                        <h2 class="text-info pt-4">サケ</h2>
+                        <p class="clump">生鮮魚介類として流通する場合にはシロサケ、アキサケ、アキアジ（アイヌ語の「アキアチップ（秋の魚の意味）」に由来する[2]。）などの名称も用いられる[3]。このほかの別名としてイヌマス、サーモン、メジカ、トキシラズ、岩手県では南部鼻曲り鮭、ブナ（いずれも河川に遡上したものを指す）などがある。トキシラズ（時知らず）は産卵期以外の時期に取れる季節外れの鮭の呼称。産卵のために栄養が疲弊していないので旬のものより美味いとも言われる。
+
+                            上記呼称を含めて地方名も多く、アキザケとアキアジは北海道や青森県、秋田県、トキシラズとナツザケとラシャマスは北海道で使われる。なお、一部ではシャケとも称される[4]が、シャケとサケの関係については諸説ある。
+                            
+                            「サケ」の語源については「サケ類」も参照のこと。
+                            
+                            漢字では「鮏」の字が使われていたが、生臭いという意味があったため、明治時代になると「鮭」が使われるようになった[5]。中国で「鮭」はフグを指し、サケという意味は日本での国訓である[6]。</p>
+                        <a href="#" class="btn btn-primary me-2">もっと詳しく見る</a>
                     </li>
                 </ul>
-            </div>
+            </section>
         </div>
-    </nav>
-    <h1>Title</h1>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
